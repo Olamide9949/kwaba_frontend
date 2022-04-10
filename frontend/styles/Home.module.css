@@ -79,7 +79,7 @@
 }
 .acmdnStatus{
   margin-top: .5rem;
-  width: 70%;
+  width: 90%;
   padding: .3rem;
 }
 .acmdnStatus button, .acmdnStatus a button,  .acmdnStatus a{
@@ -89,7 +89,7 @@
 }
 .selectBox, .selectedBox{
   display: flex;
-   flex-direction:column;
+   width:100%;
   align-items: center;
   justify-content: space-between;
 }
