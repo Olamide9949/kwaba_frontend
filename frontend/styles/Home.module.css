@@ -247,7 +247,7 @@
   font-weight: normal;
 }
 
-  @media screen and (max-width: 560) {
+  @media screen and (width: 560) {
             .selectBox {
               flex-direction:column;
             }
