@@ -1,0 +1,248 @@
+.error{
+  margin-top: .2rem;
+  color: crimson;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navbar, .container{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top:.0;
+  padding-bottom: 0;
+  width: 100%;
+}
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul li{
+  cursor: pointer;
+}
+.navbar ul li h2 {
+  color:#29405e;
+}
+.contentHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.contentHeader h2{
+  color: #150a60 ;
+  padding-left: 2rem;
+}
+.progressBar{
+  display: flex;
+  align-items: center;
+}
+.progressBar span{
+  font-size: 12px;
+  color: #d4d4d4;
+  margin-right: .5rem;
+}
+.progressCircle{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  border-right: 3px solid #23dc9a;
+  border-bottom: 3px solid #d5d5d5;
+  border-top: 3px solid #d5d5d5;
+  border-left: 3px solid #d5d5d5;
+}
+
+.progressCircle2{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  border-right: 3px solid #23dc9a;
+  border-bottom: 3px solid #23dc9a;
+  border-left: 3px solid #23dc9a;
+  border-top: 3px solid #d5d5d5;
+}
+
+.progressCircleComplete{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  border: 3px solid #23dc9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acmdnStatus{
+  margin-top: .5rem;
+  width: 70%;
+  padding: .3rem;
+}
+.acmdnStatus button, .acmdnStatus a button,  .acmdnStatus a{
+  margin: 0;
+  outline: 0;
+  border: none;
+}
+.selectBox, .selectedBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputBox{
+  display: block;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding-top: .2rem;
+  padding-bottom: .8rem;
+  padding-left: 2rem;
+  margin-bottom: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  -webkit-box-shadow: -1px -4px 6px -2px rgba(0, 0, 0, 0.377);
+  -moz-box-shadow: -1px -4px 6px -2px rgba(0, 0, 0, 0.377);
+  box-shadow: -1px 4px 6px -2px rgba(0, 0, 0, 0.377);
+}
+.selectBox div, .selectedBox div{
+  cursor: pointer;
+  padding: .8rem;
+  width: 30%;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+}
+.selectBox input{
+  padding: .8rem;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  color: #150a60;
+  width: 40%;
+}
+.selectedBox select{
+  padding: .8rem;
+  width: 40%;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  color: #d5d5d5;
+  background-color: #f8f8f8;
+}
+.inputBox span{
+  font-size: 10px;
+  font-weight: bold;
+  color: #d5d5d5;
+  margin: 0;
+}
+.inputBox input{
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: .2rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  color: #150a60;
+}
+.selectBox input::placeholder{
+  color: #d4d4d4;
+  font-size: 13px;
+}
+.selectBox input:active {
+  border: 1px solid #150a60;
+  color: #150a60;
+}
+
+.selectBox select{
+  padding: .8rem;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  width: 40%;
+  margin-bottom: 2rem;
+  color: #150a60;
+}
+.selectBox div:hover, .selectBox input:hover{
+  border: 1px solid #150a60;
+  color: #150a60;
+}
+.selectBoxActive{
+  color: #150a60;
+  border: 1px solid #150a60;
+}
+
+.selectBoxInActive{
+  border: 1px solid #d4d4d4;
+  color: #d4d4d4;
+}
+
+.buttonInActive{
+  width: 30%;
+  font-size: 14px;
+  padding: .8rem;
+  border:1px solid #d4d4d4;
+  outline: none;
+  color: #707070;
+  font-weight: bold;
+  cursor: not-allowed;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #d4d4d4;
+}
+.buttonActive{
+  font-size: 14px;
+  padding: .8rem;
+  width: 30%;
+  border:1px solid #23dc9a;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #23dc9a;
+}
+.acceptButton{
+  font-size: 14px;
+  padding: .8rem;
+  width: 30%;
+  border:1px solid #28276a;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #28276a;
+}
+.paymentOption{
+  background-color: #cec6ff;
+  padding:.8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .2rem;
+  width: 60%;
+}
+.footer {
+  border-top: 1px solid #d4d4d4;
+  display: flex;
+  width: 100%;
+  margin-top: .8rem;
+  align-items: center;
+}
+.footer span{
+  color: #29405e;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: .2rem;
+  margin-left: .2rem;
+}
+.footer p{
+  color: #29405e;
+  font-size: 12px;
+  font-weight: normal;
+}
