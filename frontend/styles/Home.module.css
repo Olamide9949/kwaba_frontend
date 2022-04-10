@@ -246,11 +246,11 @@
   font-weight: normal;
 }
 
-  @media screen and (width: 560) {
+  @media only screen and (max-width: 600) {
             .selectBox {
               flex-direction:column;
             }
            .selectBox div{
-              Width:100%;
+              Width:90%;
             }
          }
