@@ -2,6 +2,7 @@ import styles from '../../styles/Home.module.css';
 import * as React from 'react';
 import * as Icon from '@heroicons/react/solid';
 import BASE_URL from '../../Utils';
+import axios from 'axios';
 
 const ContentHeader = ({progressStatus, progressCompleted}) => {
         const [loanBalance, setLoanBalance] = React.useState('');
