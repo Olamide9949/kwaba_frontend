@@ -24,9 +24,12 @@ const PaymentOption = ({ salary, rentStatus, amount, rentAmount, month, tenure})
             }
             axios.post(`${BASE_URL}loan`, data)
             .then(res=>{
-                alert('Loan accepted!')
+                if(res.data.success===true && res.data.data !=='You have pending loan.'){
+                    window.location.replace('/');
+                }
+                alert(res.data.data)                
             })
-            .catch(err=>console.log(err.mesage))
+            .catch(err=>alert(err.mesage))
         }
 
     return (
