@@ -248,6 +248,17 @@
   font-weight: normal;
 }
 
+.titleBalanceContainer p{
+  margin:0;
+  padding-left: 2rem;
+  color:#29405e;
+  font-weight: bold;
+}
+.titleBalanceContainer  span {
+  color:#3d3d3d;
+  font-weight: normal;
+  font-size: 10px;
+}
   @media only screen and (min-width: 600) {
             .selectBox {
               flex-direction:column;
