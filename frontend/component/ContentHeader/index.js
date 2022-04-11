@@ -11,18 +11,22 @@ const ContentHeader = ({progressStatus, progressCompleted}) => {
         maximumSignificantDigits: 3,
       }).format(value);
 
-    React.useEffect(()=>{
+     React.useEffect(()=>{
         let mounted = true;
         if(mounted){
             axios.get(`${BASE_URL}loan/offer`)
             .then(res=>{
-                console.log(res.data.data.loans)
-                setLoanBalance(res.data.data.loans[0].loan_amount)
+                if(res.data.data.loans.length !==0){
+                    setLoanBalance(res.data.data.loans[0].loan_amount)
+                }else{
+                    setLoanBalance('')
+                }
             })
             .catch(err=>console.log(err.message))
         }
         return ()=> mounted = false;
     },[]);
+        
     return(
         <div className={styles.contentHeader}>
             <div className={styles.titleBalanceContainer}>
