@@ -27,7 +27,8 @@ const PaymentOption = ({ salary, rentStatus, amount, rentAmount, month, tenure})
                 if(res.data.success===true && res.data.data !=='You have pending loan.'){
                     window.location.replace('/');
                 }
-                alert(res.data.data)                
+//                 alert(res.data.data)
+                    console.log(res.data.data)
             })
             .catch(err=>alert(err.mesage))
         }
